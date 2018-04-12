@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 
 class Stopwatch extends React.Component {
     constructor (props, display) {
@@ -79,6 +79,7 @@ class Stopwatch extends React.Component {
 
     render () {
         return (
+            <div>
             <nav className="controls">
                 <a href="#" className="button" id="start" onClick={this.start}>Start</a>
                 <a href="#" className="button" id="stop" onClick={this.stop}>Stop</a>
@@ -87,7 +88,8 @@ class Stopwatch extends React.Component {
                 <a href="#" className="button" id="reset-results" onClick={this.resetResults}>Clear results</a>
             </nav>
             <div className="stopwatch">4</div>
-        <ul className="results" id="results"></ul>
+            <ul className="results" id="results"></ul>
+            </div>
         )
     }
 
